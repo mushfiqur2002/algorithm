@@ -1,7 +1,8 @@
 let arr = [20, 10, 40, 30, 50, 50, 60];
 
+/*
+//---> random array element generate
 let arr2 = [];
-
 for (let i = 0; i < 10; i++) {
     let randNum = Math.floor(Math.random() * 20);
     while (arr2.includes(randNum)) {
@@ -9,9 +10,7 @@ for (let i = 0; i < 10; i++) {
     }
     arr2.push(randNum);
 }
-console.log(arr2);
-console.log('sort function: ', arr2.sort((a, b) => b - a));
-
+*/
 
 function insertionSort(array) {
     for (let i = 1; i < array.length; i++) {
@@ -26,4 +25,5 @@ function insertionSort(array) {
     return array;
 }
 
-console.log(insertionSort(arr2));
+console.log('given array : ', arr);
+console.log('sorted array : ', insertionSort(arr));
